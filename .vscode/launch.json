@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build",
+      "command": "dotnet",
+      "args": ["build"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      }
+    }
+  ],
+  "configurations": [
+    {
+      "name": "Debug",
+      "request": "launch",
+      "type": "coreclr",
+      "justMyCode": false,
+      "program": "${workspaceFolder}/bin/Debug/net9.0/key_track_rx.dll"
+    }
+  ]
+}
